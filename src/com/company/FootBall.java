@@ -7,6 +7,7 @@ public class FootBall extends Ball{
 
     @Override
     public String getExtractInfo() {
-        return null;
+//        return this.getClass().getName();
+        return "jeg er en Fodbold";
     }
 }

@@ -11,7 +11,15 @@ public class TennisBall extends Ball {
     }
 
     @Override
+    public boolean isTennisBall() {
+        if(getSize() > 10){
+            return false;
+        }
+        return true;
+    }
+
+    @Override
     public String getExtractInfo() {
-        return null;
+        return "Jeg er en Tennisbold";
     }
 }
