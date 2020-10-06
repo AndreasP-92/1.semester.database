@@ -65,11 +65,12 @@ public class Main {
         }
 
         ArrayList<TennisBall> tbList = new ArrayList<>();
+        for(Ball bb : balls){
+            if(bb.isTennisBall()){
+                tbList.add((TennisBall) bb);
+            }
+        }
+        System.out.println(tbList.size());
 
-        tbList.add(new TennisBall(2, "Tretorn"));
-        tbList.add(new TennisBall(4, "Tretorn"));
-        tbList.add(new TennisBall(5, "Tretorn"));
-
-        
     }
 }
