@@ -13,8 +13,8 @@ public class Main {
         balls.add(fb);
         balls.add(new FootBall(4, "Adidas"));
         balls.add(new FootBall(4, "Select"));
-        balls.add(new FootBall(4, "Adidas"));
-        balls.add(new FootBall(4, "Tretorn"));
+        balls.add(new TennisBall(2, "Adidas"));
+        balls.add(new TennisBall(2, "Tretorn"));
 
         System.out.println(balls);
 
@@ -59,5 +59,17 @@ public class Main {
         Ball fbf = Collections.min(balls);
 
         System.out.println("Mindste bold= " + fbf);
+
+        for (Ball bb: balls){
+            System.out.println("en af gangen "+bb.getSize());
+        }
+
+        ArrayList<TennisBall> tbList = new ArrayList<>();
+
+        tbList.add(new TennisBall(2, "Tretorn"));
+        tbList.add(new TennisBall(4, "Tretorn"));
+        tbList.add(new TennisBall(5, "Tretorn"));
+
+        
     }
 }
